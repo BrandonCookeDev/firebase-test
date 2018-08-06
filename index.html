@@ -1,0 +1,76 @@
+<html>
+   <head>
+		
+		<style>
+		body{
+			text-align: center;
+			margin: auto 0;
+		}
+		label:{
+			font-weight: 700;
+		}
+		</style>
+   </head>
+	
+   <body>
+		<h1>Hello World</h1>
+		<button onclick='getDbVal()'>Get Val</button>
+		<p id="pVal"></p>
+		
+		<hr/>
+		
+		<h3>Get By Make</h3>
+		<form>
+			<input type="text" name="make" id="searchMakeTextbox"/>
+			<br/>
+			<input type='button' value='search' onclick='getByMake(this)' />
+		</form>
+		<div id="carByMake">
+		</div>
+
+		<hr/>
+
+		<h3>Get By Model</h3>
+		<form>
+			<input type="text" name="make" id="searchModelMakeTextbox" placeholder="make"/>
+			<br />
+			<input type="text" name="model" id="searchModelModelTextbox" placeholder="model" />
+			<br />
+			<input type="button" value="search" onclick="getByModel(this);" />
+		</form>
+		<div id="carByModel">
+		</div>
+
+		<hr/>
+		
+		<div id='cars'>
+		</div>
+
+		<hr/>
+		<form id="valForm">
+			<input type="text" placeholder="val1" name="val1" />
+			<br/>
+			<input type="text" placeholder="val2" name="val2" />
+			<br/>
+			<input type="text" placeholder="val3" name="val3" />
+			<br />
+			<input type="button"  value="write to database"  onclick="write(this)" />
+		</form>
+
+		<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+		<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyAIiBMd4ZaV-LriiVYkb6eas9Zgebx74P8",
+			authDomain: "first-project-a7477.firebaseapp.com",
+			databaseURL: "https://first-project-a7477.firebaseio.com",
+			projectId: "first-project-a7477",
+			storageBucket: "first-project-a7477.appspot.com",
+			messagingSenderId: "504690205720"
+		};
+		firebase.initializeApp(config);
+		</script>
+      	<script type = "text/javascript" src = "index.js"></script>
+      	<script src="http://localhost:35729/livereload.js"></script>
+   </body>
+</html>

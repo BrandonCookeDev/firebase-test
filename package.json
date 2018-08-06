@@ -1,0 +1,20 @@
+{
+  "name": "firebase-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^5.3.1"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "compression": "^1.7.3",
+    "express": "^4.16.3",
+    "livereload-js": "^2.3.0"
+  }
+}
